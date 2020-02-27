@@ -10,7 +10,7 @@ angular.module('example.my_plugin').controller('MyPluginIndexController', functi
 
     // Bind a test var with the template.
     $scope.my_title = gettext('MyPlugin');
-    console.log('ICI : ' + $scope.my_title);
+    
     // GET a result through Python API
     $http.get('/api/my_plugin').then( (resp) => {
 	    $scope.python_get = resp.data;
