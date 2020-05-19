@@ -20,8 +20,10 @@ dependencies:
     #   binary_name: curl
     # }
 resources:
-    - 'resources/module.es'
-    - 'resources/index.html'
+    - 'resources/js/module.es'
+    - 'resources/js/routing.es'
+    - 'resources/js/controllers/index.controllers.es'
+    - 'resources/partial/index.html'
     - 'ng:example.my_plugin'
     # - 'ng:my.plugin.angular-submodule'
     # - 'resources/module.js'
