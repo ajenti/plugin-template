@@ -20,7 +20,7 @@ class Handler(HttpPlugin):
             text = "This content was generated through a GET call to Python !"
             return text
 
-        elif http_context.method == 'POST':
+        if http_context.method == 'POST':
             data = http_context.json_body()['my_var']
             text = "This content in the module %s was generated through a POST call to Python !" % data
             return text
